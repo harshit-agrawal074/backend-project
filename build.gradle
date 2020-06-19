@@ -8,6 +8,9 @@ buildscript {
         junitVersion = '4.12'
         assertJVersion = '3.9.0'
         mockitoVersion = '3.0.0'
+        flywayVersion = '4.0.3'
+        mysqlConnectorVersion = '5.1.13'
+        hibernateJpaAnnotationProcessorVersion = "1.0.2.Final"
     }
 
     repositories {

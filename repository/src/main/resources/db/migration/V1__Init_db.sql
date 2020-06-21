@@ -1,8 +1,8 @@
 CREATE TABLE IF NOT EXISTS content (
   id bigint(20) NOT NULL AUTO_INCREMENT,
   uuid VARCHAR(50) NOT NULL,
-  created_on TIMESTAMP,
-  modified_on TIMESTAMP,
+  created_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  modified_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   category VARCHAR(20),
   genre VARCHAR(20),
   duration float,

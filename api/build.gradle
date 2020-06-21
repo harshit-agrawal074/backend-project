@@ -1,8 +1,6 @@
 dependencies {
     compile (
-            project(':repository'),
-            project(':service'),
-            project(':api')
+            project(':service')
     )
     implementation(
             "org.springframework.boot:spring-boot-starter-web"

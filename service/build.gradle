@@ -1,0 +1,6 @@
+dependencies {
+    compile (
+            project(':repository')
+    )
+    compile("ma.glasnost.orika:orika-core:${orikaVersion}")
+}

@@ -7,12 +7,13 @@ import java.util.List;
 import java.util.UUID;
 
 import javax.persistence.Column;
-import javax.persistence.ElementCollection;
+import javax.persistence.Convert;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.PrePersist;
+import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -24,12 +25,14 @@ import org.springframework.data.annotation.LastModifiedDate;
 
 import com.backendproject.application.Category;
 import com.backendproject.application.Genre;
+import com.backendproject.application.convertor.ListOfStringConvertor;
 
 @Data
-@Builder
+@Builder(toBuilder = true)
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity(name = "content")
+@Entity
+@Table(name = "content")
 public class Content {
 
 	@Id
@@ -59,7 +62,7 @@ public class Content {
 	@Column(name = "description")
 	private String description;
 
-	@ElementCollection
+	@Convert(converter = ListOfStringConvertor.class)
 	@Column(name = "languages")
 	private List<String> languages = new ArrayList<>();
 
@@ -69,7 +72,7 @@ public class Content {
 	@Column(name = "is_deleted", columnDefinition = "char(1) default 'N'")
 	private Boolean isDeleted;
 
-	@ElementCollection
+	@Convert(converter = ListOfStringConvertor.class)
 	@Column(name = "casting")
 	private List<String> casting = new ArrayList<>();
 
@@ -79,7 +82,7 @@ public class Content {
 	@PrePersist
 	public void prePersist(){
 		uuid = UUID.randomUUID().toString();
-		createdOn = LocalDateTime.now(ZoneId.of("EST"));
+		createdOn = LocalDateTime.now(ZoneId.of("GMT"));
 		modifiedOn = createdOn;
 	}
 }

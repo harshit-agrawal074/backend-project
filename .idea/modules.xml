@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/backend-project.iml" filepath="$PROJECT_DIR$/backend-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api/com.backendproject.api.iml" filepath="$PROJECT_DIR$/.idea/modules/api/com.backendproject.api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api/com.backendproject.api.main.iml" filepath="$PROJECT_DIR$/.idea/modules/api/com.backendproject.api.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api/com.backendproject.api.test.iml" filepath="$PROJECT_DIR$/.idea/modules/api/com.backendproject.api.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/application/com.backendproject.application.iml" filepath="$PROJECT_DIR$/.idea/modules/application/com.backendproject.application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/application/com.backendproject.application.main.iml" filepath="$PROJECT_DIR$/.idea/modules/application/com.backendproject.application.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/application/com.backendproject.application.test.iml" filepath="$PROJECT_DIR$/.idea/modules/application/com.backendproject.application.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.backendproject.backend-project.iml" filepath="$PROJECT_DIR$/.idea/modules/com.backendproject.backend-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.backendproject.backend-project.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.backendproject.backend-project.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.backendproject.backend-project.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.backendproject.backend-project.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/repository/com.backendproject.repository.iml" filepath="$PROJECT_DIR$/.idea/modules/repository/com.backendproject.repository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/repository/com.backendproject.repository.main.iml" filepath="$PROJECT_DIR$/.idea/modules/repository/com.backendproject.repository.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/repository/com.backendproject.repository.test.iml" filepath="$PROJECT_DIR$/.idea/modules/repository/com.backendproject.repository.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service/com.backendproject.service.iml" filepath="$PROJECT_DIR$/.idea/modules/service/com.backendproject.service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service/com.backendproject.service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/service/com.backendproject.service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service/com.backendproject.service.test.iml" filepath="$PROJECT_DIR$/.idea/modules/service/com.backendproject.service.test.iml" />
     </modules>
   </component>
 </project>

@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS content (
   description VARCHAR(255),
   languages VARCHAR(255),
   rating float,
-  is_deleted CHAR(1),
+  is_deleted CHAR(1) DEFAULT FALSE,
   casting VARCHAR(255),
   PRIMARY KEY (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

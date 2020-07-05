@@ -1,8 +1,5 @@
 package com.backendproject.application.ws;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -22,9 +19,9 @@ public class ContentWS {
 	private Float duration;
 	private String name;
 	private String description;
-	private List<String> languages = new ArrayList<>();
+	private String languages;
 	private Float rating;
 	private Boolean isDeleted;
-	private List<String> casting = new ArrayList<>();
+	private String casting;
 }
 
